@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\riize;
 use App\Http\Controllers\BukuController;
+use App\Http\Controllers\BarangController;
 // use App\Http\Controllers\BlogController;
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,6 @@ Route::get('/buku', [BukuController::class, 'index']);
 
 Route::resource('blog', BlogController::class);
 
-
+Route::get('/barang', [BarangController::class, 'index']);
 
 
