@@ -6,6 +6,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\riize;
 use App\Http\Controllers\BukuController;
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\PemainController;
 // use App\Http\Controllers\BlogController;
 /*
 |--------------------------------------------------------------------------
@@ -32,4 +33,4 @@ Route::resource('blog', BlogController::class);
 
 Route::get('/barang', [BarangController::class, 'index']);
 
-
+Route::get('/pemain', [PemainController::class, 'index']);
